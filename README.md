@@ -29,14 +29,14 @@ Beta testers: please use the issue tracker and tags to submit bug / enhancement 
 
 ### "UTILITY" modules:
 
--audioTexture
+-audio2Texture
   creates a "waveform" of the incoming audio as a black&white texture
   
 -texture2RGB
-  separates the incoming texture into 
+  separates the incoming texture into red, green, blue, luma video textures.
   
 -texture2CMY
-
+  separates the incoming texture into cyan, magenta, yellow, luma video textures.
 
 # Preliminary documentation for currently available modules:
 
