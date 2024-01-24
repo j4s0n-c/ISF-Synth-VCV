@@ -58,7 +58,7 @@ Beta testers: please use the issue tracker and tags to submit bug / enhancement 
 ### BLEND: 2 channel texture mixer with selectable blend mode
 ![BLEND_2](https://github.com/j4s0n-c/ISF-Synth-VCV/assets/4063528/399bbd69-3bfc-47c2-b6d0-3fcaa980262d)
 
-- 2 tuxture inputs mixed through one of many (28 so far) blend modes
+- 2 texture inputs mixed through one of many (28 so far) blend modes.
   
 - blend mode and crossfader are cv controllable.
   
