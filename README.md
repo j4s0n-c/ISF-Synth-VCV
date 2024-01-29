@@ -45,18 +45,21 @@ ISF stands for "Interactive Shader Format"; for more information about ISFs, ple
 + **Edit File** : Open the ISF file with the default program on your machine for editing. 
 + **SPD** : For ISFs that use time, the speed control (-200% to +200%). Default is 100%.
 + **RST** : For ISFs that use time, reset the shader's clock to 0.
-+ 19 parameters that can be mapped to ISF inputs.
++ 19 parameters that can be mapped to ISF inputs. 
+  If there are more than 19 parameters defined in the ISF, only the first 19 will be loaded.
 
 #### CV Inputs
 + **SPD** : For ISFs that use time, the speed control (-200% to +200%). Default is 100%.
 + **RST** : For ISFs that use time, reset the shader's clock to 0.
 + 3 'Texture CV' Inputs that can be mapped to ISF image inputs.
 + 19 CV Inputs that can be mapped to ISF inputs.
+  If there are more than 19 parameters defined in the ISF, only the first 19 will be loaded.
 
 #### Context Menu
-+ (Context Menu) Load an ISF file.
-+ (Context Menu) Initialize Parameters: Reset ISF parameters only to defaults. 
-   Retains the currently loaded ISF file.
++ **Initialize Parameters** : Reset ISF parameter values *only*. Will be reset to the defaults defined in the ISF file. 
+  Retains the currently loaded ISF file.
++ **Load File** : Load an ISF file.
++ **Preview** : Show or hide the preview.
 
 #### CV Outputs
 + **OUT** : (Texture CV) The resulting output texture.
@@ -336,6 +339,7 @@ Current blend modes:
 # Other Resources
 + Official ISF Site: [isf.video](https://isf.video/) - Documentation, examples, development resources, and ISF files (pretty much everything ISF).
 + Open Source ISF Files: [VIDVOX's ISF-Files github](https://github.com/Vidvox/ISF-Files)
++ Frame-sharing (Windows): Download [Spout](https://spout.zeal.co/)
 
 # Licenses
 + Third-party Libraries (all in one file): [LICENSES.md](LICENSES.md) 
