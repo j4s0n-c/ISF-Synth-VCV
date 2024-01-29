@@ -39,25 +39,27 @@ The current pack includes:
 **isfLoader** is a simple ISF file loader for VCV Rack. It reads an ISF file and links CV inputs and parameters (knobs, switches, etc) to the ISF inputs. 
 ISF stands for "Interactive Shader Format"; for more information about ISFs, please visit: https://isf.video/.
 
-#### Context Menu
-+ (Context Menu) Load an ISF file.
-+ (Context Menu) Initialize Parameters: Reset ISF parameters only to defaults. 
-   Retains the currently loaded ISF file.
-
-#### CV Inputs & Outputs
-+ **SPD** : For ISFs that use time, the speed control (-200% to +200%). Default is 100%.
-+ **RST** : For ISFs that use time, reset the shader's clock to 0.
-+ 3 'Texture CV' Inputs that can be mapped to ISF image inputs.
-+ 19 CV Inputs that can be mapped to ISF inputs.
-+ 1 'Texture CV' Output that can be fed to other **isfLoaders**, [filter modules](#Filter-Modules), or a [**textureMonitor**](#textureMonitor).
-
-#### Controls
+#### User Controls
 + **Load File** : Load an ISF file.
 + **Reload File** : Reload the current ISF file.
 + **Edit File** : Open the ISF file with the default program on your machine for editing. 
 + **SPD** : For ISFs that use time, the speed control (-200% to +200%). Default is 100%.
 + **RST** : For ISFs that use time, reset the shader's clock to 0.
 + 19 parameters that can be mapped to ISF inputs.
+
+#### CV Inputs
++ **SPD** : For ISFs that use time, the speed control (-200% to +200%). Default is 100%.
++ **RST** : For ISFs that use time, reset the shader's clock to 0.
++ 3 'Texture CV' Inputs that can be mapped to ISF image inputs.
++ 19 CV Inputs that can be mapped to ISF inputs.
+
+#### Context Menu
++ (Context Menu) Load an ISF file.
++ (Context Menu) Initialize Parameters: Reset ISF parameters only to defaults. 
+   Retains the currently loaded ISF file.
+
+#### CV Outputs
++ **OUT** : (Texture CV) The resulting output texture.
 
 ---
 
@@ -99,7 +101,9 @@ It supports png, jpg, and gif (including animated). Note that images will be set
 This is technically not very hardware-like, but instead of making two (2) monitors (wired and wireless versions), this has just been combined into one module. Please use your imagination that these are really two separate modules.
 
 #### Controls
-+ Change the width by grabbing the right hand side of the module.
++ **Resize Handle** : Change the width by grabbing the right hand side of the module.
+	+ Double-clicking will return the module to the default width.
+	+ (Context Menu) Select a predefined width to roughly appoximate an aspect ratio.
 + (Context Menu) Select **Input Mode**:
     + **Wired** : Use the CV input to use for the input source. The CV input will be shown in this mode. 
     + **Wireless** : Use a 'wirelessly' broadcasted texture from a [texOut](#texOut) module or a frame share sender (if supported). The CV input will be hidden in this mode.
