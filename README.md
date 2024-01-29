@@ -278,7 +278,7 @@ Current blend modes:
 ---
 
 ### COLOR
-![COLOR: bi-polar colorizer](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/isf_WAVE.png?raw=true)
+![COLOR: bi-polar colorizer](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/isf_COLOR.png?raw=true)
 
 **COLOR** is a bi-polar colorizer with control of the brightness and contrast of red, green, and blue channels with invert switches on each channel.
 
