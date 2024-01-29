@@ -358,9 +358,3 @@ Current blend modes:
 + [VVISF & VVGL](https://raw.githubusercontent.com/mrRay/VVISF-GL/master/LICENSE.txt)
 
 
-# Licenses
-+ Third-party Libraries (all in one file): [LICENSES.md](LICENSES.md) 
-+ [Spout2](https://raw.githubusercontent.com/leadedge/Spout2/master/LICENSE)
-+ [VVISF & VVGL](https://raw.githubusercontent.com/mrRay/VVISF-GL/master/LICENSE.txt)
-
-
