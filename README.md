@@ -71,8 +71,8 @@ It supports png, jpg, and gif (including animated). Note that images will be set
 + **Zoom** : Zoom in/out (20% - 500%).
 + **X Offset** : Moves the image on the canvas (x-direction).
 + **Y Offset** : Moves the image on the canvas (y-direction).
-+ **Center X** : (Toggle) Centers the image on the canvas (x-direction).
-+ **Center Y** : (Toggle)Centers the image on the canvas (y-direction).
++ **Center X** : Centers the image on the canvas (x-direction).
++ **Center Y** : Centers the image on the canvas (y-direction).
 + **Repeat** : Tiling/Repeat mode:
   - None
   - X&Y (Normal)
@@ -81,8 +81,8 @@ It supports png, jpg, and gif (including animated). Note that images will be set
   - X&Y (Mirrored)
   - X Only (Mirrored)
   - Y Only (Mirrored)
-+ **Mirror X** : (Toggle) Mirror the image (x-direction).
-+ **Mirror Y** : (Toggle) Mirror the image (y-direction).
++ **Mirror X** : Mirrors the image (x-direction).
++ **Mirror Y** : Mirrors the image (y-direction).
 #### CV Outputs
 + **OUT** : (Texture CV) The resulting output texture.
 
