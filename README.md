@@ -35,7 +35,7 @@ The current pack includes:
 
 ## Texture Loading
 ### isfLoader
-
+![isfLoader](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/isfLoader.png?raw=true)
 **isfLoader** is a simple ISF file loader for VCV Rack. It reads an ISF file and links CV inputs and parameters (knobs, switches, etc) to the ISF inputs. 
 ISF stands for "Interactive Shader Format"; for more information about ISFs, please visit: https://isf.video/.
 
@@ -72,6 +72,7 @@ ISF stands for "Interactive Shader Format"; for more information about ISFs, ple
 ---
 
 ### imageLoader
+![imageLoader](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/imageLoader.png?raw=true)
 
 **imageLoader** is a simple image loader for VCV Rack. It loads the given image into a texture and then outputs the texture information via CV output.
 It supports png, jpg, and gif (including animated). Note that images will be setup on a canvas of the default texture size (currently 1080p).
@@ -195,7 +196,7 @@ Use the context menu to configure the texture receiving properites.
 ## Generation Modules
 
 ### WAVE
-![WAVE: multi-function video oscillator](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/isf_WAVE.png?raw=true)
+![WAVE: multi-function video oscillator](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/WAVE_2.png?raw=true)
 
 **WAVE** is a multi-function video oscillator. It is a blendable sine-, triangle-, ramp-, or square-shaped, 
 horizontal or vertical, black-to-white gradient generator. It features built-in mirror and flip effects.
@@ -217,6 +218,7 @@ horizontal or vertical, black-to-white gradient generator. It features built-in 
 ---
 
 ### audioToImage & audioToImage2Ch
+![audio2Image](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/audio2Image.png?raw=true)
 
 **audioToImage** generatures textures from audio CVs for us in ISFs that need and *audio* or *audioFFT* input.
 This comes in two flavors: single channel (mono) and stereo (2-channel).
@@ -237,7 +239,7 @@ This comes in two flavors: single channel (mono) and stereo (2-channel).
 ## Filter Modules
 
 ### BLEND
-![BLEND: 2-channel texture mixer with selectable blend mode](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/isf_BLEND.png?raw=true)
+![BLEND: 2-channel texture mixer with selectable blend mode](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/BLEND_2.png?raw=true)
 
 **BLEND** is a 2-channel texture mixer with selectable blend mode. 
 It allows mixing between the two input textures and the final blend (crossfader and CV-controllable).
@@ -290,7 +292,7 @@ Current blend modes:
 ---
 
 ### COLOR
-![COLOR: bi-polar colorizer](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/isf_COLOR.png?raw=true)
+![COLOR: bi-polar colorizer](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/WAVE_COLOR_2.png?raw=true)
 
 **COLOR** is a bi-polar colorizer with control of the brightness and contrast of red, green, and blue channels with invert switches on each channel.
 
@@ -306,6 +308,8 @@ Current blend modes:
 ---
 
 ### texRGBY
+![texRGBY](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/texRGBY.png?raw=true)
+
 **texRGBY** separates the incoming texture into red, green, blue, and luma video textures.
 
 #### User Controls & Input CVs
@@ -322,6 +326,8 @@ Current blend modes:
 ---
 
 ### texCMYK
+![texCMYK](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/texCMYK.png?raw=true)
+
 **texCMYK** separates the incoming texture into cyan, magenta, yellow, and black video textures.
 
 #### User Controls & Input CVs
