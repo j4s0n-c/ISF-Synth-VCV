@@ -3,7 +3,9 @@ ISF based video synthesis/manipulation plugin for VCV Rack.
 
 ## Plugin Closed Beta
 
-Beta testing is currently by invite only.
+Beta testing is currently by invite only. **Please** do not share the binaries without prior permission.
+
+We will not post anything here for download. Binaries will be sent directly by email.
 
 **Invited Beta testers:** Please use the [issue tracker](https://github.com/j4s0n-c/ISF-Synth-VCV/issues) and tags 
 to submit bug / enhancement (feature requests) / question (general feedback).
