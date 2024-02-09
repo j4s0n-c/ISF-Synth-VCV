@@ -1,7 +1,11 @@
 # trowaSoft ISF-Synth-VCV
 ISF based video synthesis/manipulation plugin for VCV Rack.
 
-**Beta testers:** Please use the [issue tracker](https://github.com/j4s0n-c/ISF-Synth-VCV/issues) and tags 
+## Plugin Closed Beta
+
+Beta testing is currently by invite only.
+
+**Invited Beta testers:** Please use the [issue tracker](https://github.com/j4s0n-c/ISF-Synth-VCV/issues) and tags 
 to submit bug / enhancement (feature requests) / question (general feedback).
 
 ## NOTES
