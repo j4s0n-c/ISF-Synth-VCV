@@ -226,7 +226,7 @@ horizontal or vertical, black-to-white gradient generator. It features built-in 
 ### audioToImage & audioToImage2Ch
 ![audio2Image](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/audio2Image.png?raw=true)
 
-**audioToImage** generatures textures from audio CVs for us in ISFs that need and *audio* or *audioFFT* input.
+**audioToImage** generates textures from audio CVs for us in ISFs that need and *audio* or *audioFFT* input.
 This comes in two flavors: single channel (mono) and stereo (2-channel).
 
 #### CV Inputs
