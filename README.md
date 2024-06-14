@@ -16,11 +16,13 @@ to submit bug / enhancement (feature requests) / question (general feedback).
 + The modules transport textures to each other via a 'Texture CV' port which looks like a yellow composite RCA jack.
 + This documentation and plugin is still a work in progress. Not everything may be documented here. The names of modules and features may change.
   Also, there are some other modules that are still in development that aren't in this test build--this may be more like an alpha.
-+ To install the plugin: Copy the relevant ".vcvplugin" file for your hardware to your plugins folder. Then open Rack.
++ To install the plugin: Copy the relevant ".vcvplugin" file for your os/cpu to your plugins folder. Then (re)open Rack.
 
 	-Windows: "C:\Users\\**your_name**\\AppData\Local\Rack2\plugins-win-x64"
 
 	-Apple: "/Users/**your_name**/Library/Application Support/Rack2/plugins-mac-**your_cpu**/"
+
+	-You can also find this folder from VCV Rack by opening the "Help" menu, and clicking "Open user folder". It's called "plugins-**OS**-**CPU**".
 
 ## Module List
 The current pack includes:
