@@ -92,12 +92,12 @@ It supports png, jpg, and gif (including animated). Note that images will be set
 
 #### User Controls & CV Inputs
 + **Load File** : (Control only) Load an image file.
-+ **Zoom** : Zoom in/out (20% - 500%).
-+ **X Offset** : Moves the image on the canvas (x-direction).
-+ **Y Offset** : Moves the image on the canvas (y-direction).
++ **ZOOM** : Zoom in/out (20% - 500%).
++ **Offset X** : Moves the image on the canvas (x-direction).
++ **Offset Y** : Moves the image on the canvas (y-direction).
 + **Center X** : Centers the image on the canvas (x-direction).
 + **Center Y** : Centers the image on the canvas (y-direction).
-+ **Repeat** : Tiling/Repeat mode:
++ **TILE** : Tiling/Repeat mode:
   - None
   - X&Y (Normal)
   - X Only (Normal)
@@ -233,7 +233,7 @@ horizontal or vertical, black-to-white gradient generator. It features built-in 
 ### audioToImage & audioToImage2Ch
 ![audio2Image](https://github.com/j4s0n-c/ISF-Synth-VCV/blob/main/screenshots/audio2Image.png?raw=true)
 
-**audioToImage** generates textures from audio CVs for us in ISFs that need and *audio* or *audioFFT* input.
+**audioToImage** generates textures from audio CVs for use in ISFs that need and *audio* or *audioFFT* input.
 This comes in two flavors: single channel (mono) and stereo (2-channel).
 
 #### CV Inputs
@@ -263,6 +263,7 @@ It allows mixing between the two input textures and the final blend (crossfader 
   - (Context Menu) Select the mode from the list.   
 + **<** / **>** : Buttons decrement or increment the selected blending mode. 
 + **MIX** : The mix between input texture A, the final blend, and input texture B. If the corresponding input is active, then this user control is ignored.
++ **DC / AC** : Switches the blend mode between unipolar and bipolar operation. Gives a very different look on certain blend modes.
 #### CV Inputs
 + **BLEND MODE** : Blend mode. If this input is active, then the user control is ignored.
 + **MIX** : The mix between A, A+B, and B for the final texture output. If this input is active, then the user control is ignored.
@@ -310,10 +311,10 @@ Current blend modes:
 **COLOR** is a bi-polar colorizer with control of the brightness and contrast of red, green, and blue channels with invert switches on each channel.
 
 #### User Controls & Input CVs
-+ **IN** : (CV only) (Texture CV) The input texture.
++ **IN** : (Texture CV) The input texture.
 + For each channel (Red, Green, Blue), CV and user controls for:
     + **BRIGHT**: (CV + Knob) Brightness for the channel. 
-    + **CONTRAST**: (CV + Knob) Contrast for the channel.
+    + **CONTR**: (CV + Knob) Contrast for the channel.
     + **INV**: Invert the color. If the CV input is active, the switch is ignored.
 #### Output CVs
 + **OUT** : (Texture CV) The resulting output texture.
