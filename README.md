@@ -11,8 +11,9 @@ We will not post any builds here for download. Binaries will be sent directly by
 to submit bug / enhancement (feature requests) / question (general feedback).
 
 ## NOTES
-+ These modules will **not run in VST mode** as they are intended to be constantly generating textures and thus need a valid OpenGL context to run (they need access to the graphics card).
-+ It is recommended that you have a decent video card for these modules (actually even processor and RAM). 
++ These modules will currently **not run correctly in VST mode** They will work **once** but, if you close the plugin window or try to re-open a saved session, crash!
++ It is recommended that you have a decent dedicated video card for these modules to function smoothly.
++ CPU and RAM are also important.
 + The modules transport textures to each other via a 'Texture CV' port which looks like a yellow composite RCA jack.
 + This documentation and plugin is still a work in progress. Not everything may be documented here. The names of modules and features may change.
   Also, there are some other modules that are still in development that aren't in this test build--this may be more like an alpha.
@@ -28,13 +29,13 @@ to submit bug / enhancement (feature requests) / question (general feedback).
 The current pack includes:
 
 **Texture Loading**:
-+ [isfLoader](#isfLoader) - Load your own Interactive Shader Format (ISF) files to generate textures in Rack.
++ [isfLoader](#isfLoader) - Load and edit your own Interactive Shader Format (ISF) files to generate textures in Rack.
 + [imageLoader](#imageLoader) - Load an image (png, jpg, gif) to texture.
 
 **Texture Viewing and Transmitting**:
 + [textureMonitor](#textureMonitor) - Display for generated/loaded textures. Can receive the texture "wirelessly" from a [texOut](#texOut) module or from an external texture/frame sharing program (i.e. via Spout).
-+ [texOut](#texOut) - "Transmit" a texture wirelessly to the a [textureMonitor](#textureMonitor) or to an external texture/frame sharing program (i.e. via Spout).
-+ [texIn](#texIn) - (Currently only Windows) Receive a texture/frame from Spout and make it available as a CV output.
++ [texOut](#texOut) - "Transmit" a texture wirelessly to a [textureMonitor](#textureMonitor) or to an external texture/frame sharing program (i.e. via Spout).
++ [texIn](#texIn) - (Currently only Windows) Receive a texture/frame from Spout and make it available as a Texture CV output.
 
 **Generation Modules**: These modules generate textures.
 + [WAVE](#WAVE) - Multi-function video oscillator. Generate shapes similiar to analog shape generators. 
@@ -45,6 +46,16 @@ The current pack includes:
 + [COLOR](#COLOR) - Colorize an input texture.
 + [texRGBY](#texRGBY) - Extract the RGBY color channels of a texture.  
 + [texCMYK](#texCMYK) - Extract the CMYK color channels of a texture.
++ ...New in v2.0.2 beta:
++ [MOD](#MOD) - Displace texture A with texture B, per pixel.
++ [FBLUR](#FBLUR) - Fast Blur effect from standard ISF pack.
++ [KEY](#KEY) - RGB keyer with threshold and optional soft/hard edge.
++ [MOV3D](#MOV3D) - 3D translation and rotation effect.
++ [PNOISE](#PNOISE) - 2 input Perlin noise generator/transition effect.
++ [BL3ND](#BL3ND) - 3 inout video crossfader. Blends texture A & B using per pixel values from texture X.
++ [BCHS](#BCHS) - (B)rightness, (C)ontrast, (H)ue offset, (S)aturation effect.
++ [TILER](#TILER) - Tiling effect with X,Y,Z shift and optional "reflect" mode.
+
 
 ## Texture Loading
 ### isfLoader
